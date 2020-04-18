@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.loginForm.valid) {
       this.appService.login();
     } else {
-      this.toastr.error('Hello world!', 'Toastr fun!');
+      this.toastr.error('Login Failed!', 'Please provide credentials.');
     }
   }
 
